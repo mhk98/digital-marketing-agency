@@ -229,7 +229,54 @@ const Navbar = () => {
       </div>
 
 
-      
+      <div>
+            {/* Navbar Icon - Positioned on the right side */}
+            <button 
+                onClick={() => setIsOpen(true)} 
+                className="fixed top-4 right-4 md:hidden text-black text-3xl p-4"
+            >
+                <FaBars />
+            </button>
+
+            {/* Sidebar Menu - Visible only on mobile */}
+            <div 
+                className={`fixed top-0 right-0 z-10 h-full w-64 bg-black text-white transform transition-transform duration-300 md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+            >
+                <div className="flex justify-end p-4">
+                    <button onClick={() => setIsOpen(false)}>
+                        <FaTimes className="text-white text-2xl" />
+                    </button>
+                </div>
+                <div className="mt-8 space-y-4">
+                    {['HOME', 'ABOUT', 'SERVICE', 'PAGES', 'BLOG', 'CONTACT'].map((item, index) => (
+                        <div key={index} className="border-b border-gray-700">
+                            <button 
+                                onClick={() => mobileMenu(item)} 
+                                className="flex justify-between w-full py-3 px-4 text-left"
+                            >
+                                <span>{item}</span>
+                                <FaPlus className={`transform transition-transform ${openMenu === item ? 'rotate-45' : ''}`} />
+                            </button>
+                            {openMenu === item && (
+                                <div className="bg-gray-800 text-gray-400 py-2 pl-8">
+                                    <p>Submenu 1</p>
+                                    <p>Submenu 2</p>
+                                    <p>Submenu 3</p>
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Background Overlay - Visible only on mobile */}
+            {isOpen && (
+                <div 
+                    onClick={() => setIsOpen(false)} 
+                    className="fixed inset-0 bg-black opacity-50 md:hidden"
+                ></div>
+            )}
+        </div>
     </>
   );
 };

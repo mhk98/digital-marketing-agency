@@ -28,7 +28,7 @@ const Blog = () => {
       </div>
       
       {/* Right Section: Description */}
-      <div className="lg:w-1/2 w-full flex items-center justify-center lg:justify-start mt-24 ml-40">
+      <div className="lg:w-1/2 w-full flex items-center justify-center lg:justify-start mt-24 lg:ml-40">
       <div className='border-l border-gray-500 h-56'></div>
         <p className="text-sm md:text-base font-semibold lg:text-lg text-gray-700 leading-relaxed max-w-lg ml-24 text-left">
         Read our blog and try to see everything <br/>
