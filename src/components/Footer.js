@@ -30,7 +30,7 @@ const Footer = () => {
             
             {/* Bottom Section */}
             <footer className="bg-black text-white py-4">
-                <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-12">
+                <div className=" mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-12">
                     <div className="text-center md:text-left">
                         <p>© 2022 - 2025 | All rights reserved</p>
                         <p className="text-gray-500">by Wealcoder</p>

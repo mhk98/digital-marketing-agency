@@ -46,7 +46,7 @@ aesthetic for everyone.
         
 
             {/* Blog Articles */}
-            <div className="bg-white text-black px-4 lg:px-8 py-12">
+            <div className="bg-white text-black px-4 lg:px-8 py-12 lg:ml-20">
             {/* Section Header */}
             
 

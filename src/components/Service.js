@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { MdArrowOutward } from 'react-icons/md';
 import service1 from '../image/services/1.jpg'
 import './Service.css'
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 const Service = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -51,6 +51,8 @@ const Service = () => {
   };
 
 
+    
+
     return (
         <div>
             <div className="flex flex-col  items-center bg-white text-black p-8 lg:p-24 min-h-screen">
@@ -60,7 +62,8 @@ const Service = () => {
             </div>
         
       {/* Left Section: Title */}
-      <div className="lg:w-1/2 w-full mb-8 lg:mb-0 text-center lg:text-left relative">
+      <div  
+                    className="lg:w-1/2 w-full mb-8 lg:mb-0 text-center lg:text-left relative">
         <h2 className="uppercase text-xs md:text-sm text-gray-600 mb-2 lg:mb-4 tracking-widest">
           Services
         </h2>
@@ -72,7 +75,7 @@ const Service = () => {
       {/* Right Section: Description */}
       <div className="lg:w-1/2 w-full flex items-center justify-center lg:justify-start mt-24">
       <div className='border-l border-gray-500 h-56'></div>
-        <p className="text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed max-w-lg">
+        <p className="text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed max-w-lg ml-4">
           Consumers today rely heavily on digital means to research products. We research a brand’s online presence, ensuring engaging content. Meanwhile, 51% of consumers say they use Google to research products before buying.
         </p>
       </div>
@@ -82,22 +85,24 @@ const Service = () => {
     <div className=''>
     <div className='border-t border-gray-500 mx-20'></div>
 
-    <div
-      className="relative group flex flex-col lg:flex-row items-center justify-between bg-white text-black mx-28 pb-24 pt-8"
+    <motion.div  initial={{ opacity: 0, y: 100 }}  
+                    animate={{ opacity: 1, y: 0 }}     
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+      className="relative group flex flex-col lg:flex-row items-center justify-between bg-white text-black ml-4 mt-4 md:mx-28 lg:mx-28 pb-24 pt-8"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onMouseMove={handleMouseMove}
     >
       {/* Left Section: Title and Description */}
       <div className="lg:w-2/3 w-full mb-8 lg:mb-0">
-        <h2 className="uppercase text-2xl md:text-3xl font-bold text-gray-800 mb-4 lg:mb-6 text-left">
+        <h2 className="uppercase text-lg md:text-3xl lg:text-3xl font-bold text-gray-800 mb-4 lg:mb-6 text-left">
           SEARCH ENGINE <br />
           OPTIMIZATION
         </h2>
       </div>
 
       <div className="lg:w-2/3 w-full mb-8 lg:mb-0">
-        <p className="text-sm md:text-base text-gray-600 mb-4 lg:mb-6 max-w-md text-left font-semibold">
+        <p className="text-sm md:text-base  text-gray-600 mb-4 lg:mb-6 max-w-md text-left font-semibold">
           We help brands stand out through impactful, elegant visual design. Our design philosophy focuses on clarity and functionality.
         </p>
         <ul className="text-sm md:text-base text-gray-700 space-y-2 text-left font-semibold">
@@ -108,7 +113,7 @@ const Service = () => {
       </div>
 
       {/* Right Section: Circular Details Button */}
-      <div className="lg:w-1/3 w-full flex justify-center lg:justify-end mt-8 lg:mt-0">
+      <div className="lg:w-1/3 w-full flex  lg:justify-end mt-8 lg:mt-0">
         <a
           href="#"
           className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
@@ -141,7 +146,7 @@ const Service = () => {
           transition={{ duration: 0.3, ease: 'easeOut' }}
         />
       )}
-    </div>
+    </motion.div>
     </div>
 
 {/* Email marketing */}
@@ -149,8 +154,10 @@ const Service = () => {
 <div>
     <div className='border-t border-gray-500 mx-20'></div>
 
-    <div
-      className="relative group flex flex-col lg:flex-row items-center justify-between bg-white text-black pb-24 pt-8 mx-28"
+    <motion.div  initial={{ opacity: 0, y: 100 }}  
+                    animate={{ opacity: 1, y: 0 }}     
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+      className="relative group flex flex-col lg:flex-row items-center justify-between bg-white text-black pb-24 pt-8 ml-4 mt-4 md:mx-28 lg:mx-28"
       onMouseEnter={() => setIsHovered1(true)}
       onMouseLeave={() => setIsHovered1(false)}
       onMouseMove={handleMouseMove1}
@@ -175,7 +182,7 @@ const Service = () => {
       </div>
 
       {/* Right Section: Circular Details Button */}
-      <div className="lg:w-1/3 w-full flex justify-center lg:justify-end mt-8 lg:mt-0">
+      <div className="lg:w-1/3 w-full flex  lg:justify-end mt-8 lg:mt-0">
         <a
           href="#"
           className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
@@ -208,7 +215,7 @@ const Service = () => {
           transition={{ duration: 0.3, ease: 'easeOut' }}
         />
       )}
-    </div>
+    </motion.div>
     </div>
     
 
@@ -219,8 +226,10 @@ const Service = () => {
     <div>
     <div className='border-t border-gray-500 mx-20'></div>
 
-    <div
-      className="relative group flex flex-col lg:flex-row items-center justify-between bg-white text-black pb-24 pt-8 mx-28"
+    <motion.div  initial={{ opacity: 0, y: 100 }}  
+                    animate={{ opacity: 1, y: 0 }}     
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+      className="relative group flex flex-col lg:flex-row items-center justify-between bg-white text-black pb-24 pt-8 ml-4 mt-4 md:mx-28 lg:mx-28"
       onMouseEnter={() => setIsHovered2(true)}
       onMouseLeave={() => setIsHovered2(false)}
       onMouseMove={handleMouseMove2}
@@ -245,7 +254,7 @@ const Service = () => {
       </div>
 
       {/* Right Section: Circular Details Button */}
-      <div className="lg:w-1/3 w-full flex justify-center lg:justify-end mt-8 lg:mt-0">
+      <div className="lg:w-1/3 w-full flex  lg:justify-end mt-8 lg:mt-0">
         <a
           href="#"
           className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
@@ -278,7 +287,7 @@ const Service = () => {
           transition={{ duration: 0.3, ease: 'easeOut' }}
         />
       )}
-    </div>
+    </motion.div>
     </div>
 
     {/* Social Media MARKETING */}
@@ -287,8 +296,10 @@ const Service = () => {
     <div>
     <div className='border-t border-gray-500 mx-20'></div>
 
-    <div
-      className="relative group flex flex-col lg:flex-row items-center justify-between bg-white text-black pb-24 pt-8 mx-28"
+    <motion.div  initial={{ opacity: 0, y: 100 }}  
+                    animate={{ opacity: 1, y: 0 }}     
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+      className="relative group flex flex-col lg:flex-row items-center justify-between bg-white text-black pb-24 pt-8 ml-4 mt-4 md:mx-28 lg:mx-28"
       onMouseEnter={() => setIsHovered3(true)}
       onMouseLeave={() => setIsHovered3(false)}
       onMouseMove={handleMouseMove3}
@@ -313,7 +324,7 @@ const Service = () => {
       </div>
 
       {/* Right Section: Circular Details Button */}
-      <div className="lg:w-1/3 w-full flex justify-center lg:justify-end mt-8 lg:mt-0">
+      <div className="lg:w-1/3 w-full flex  lg:justify-end mt-8 lg:mt-0">
         <a
           href="#"
           className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
@@ -346,7 +357,7 @@ const Service = () => {
           transition={{ duration: 0.3, ease: 'easeOut' }}
         />
       )}
-    </div>
+    </motion.div>
     </div>
         </div>
     );

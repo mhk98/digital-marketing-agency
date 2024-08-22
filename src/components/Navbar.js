@@ -231,12 +231,23 @@ const Navbar = () => {
 
       <div>
             {/* Navbar Icon - Positioned on the right side */}
-            <button 
+            {/* <button 
                 onClick={() => setIsOpen(true)} 
                 className="fixed top-4 right-4 md:hidden text-black text-3xl p-4"
             >
                 <FaBars />
-            </button>
+            </button> */}
+
+
+<div className="flex items-center space-x-4 fixed top-4 right-4 md:hidden">
+          <div className="cursor-pointer">
+            <AiOutlineSearch size={25} />
+          </div>
+          <div className="cursor-pointer"  onClick={() => setIsOpen(true)} 
+          >
+            <FaBarsStaggered size={25} />
+          </div>
+        </div>
 
             {/* Sidebar Menu - Visible only on mobile */}
             <div 

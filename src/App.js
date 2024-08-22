@@ -8,21 +8,29 @@ import Slider from './components/Slider';
 import PricingTable from './components/PricingTable';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import HorizontalScrollSlider from './components/HorizontalScrollSlider';
+import ScrollToTopButton from './components/ScrollToTopButton ';
+
+
+
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Navbar/>
       <Banner/>
       <Clients/>
       <Agency/>
       <Service/>
       <Slider/>
+      <HorizontalScrollSlider/>
       <PricingTable/>
       <Blog/>
+      <ScrollToTopButton/>
       <Footer/>
+      
 
 
 

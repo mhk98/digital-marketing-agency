@@ -37,32 +37,32 @@ const Slider1 = () => {
   return (
 
     <div>
-        <div className="flex items-center justify-center  bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-24 mb-12 gap-72 place-items-center">
-        {/* Left Side - Large Image */}
-        <div className="p-4">
-          <img
-            src={img1}
-            alt="Large Image"
-            className="shadow-lg"
-            style={{ width: '170px', height: '200px' }}
-          />
-        </div>
-
-        {/* Right Side - Small Image */}
-        <div className="p-4">
-          <img
-            src={img2}
-            alt="Small Image"
-            className="shadow-lg"
-            style={{ width: '90px', height: '100px' }}
-          />
-        </div>
-      </div>
+       <div className="flex items-center justify-center bg-white">
+  <div className="grid grid-cols-1 md:grid-cols-2 mt-12 mb-8 gap-8 md:gap-16 lg:gap-72 place-items-center">
+    {/* Left Side - Large Image */}
+    <div className="p-4">
+      <img
+        src={img1}
+        alt="Large Image"
+        className="shadow-lg"
+        style={{ width: '100%', maxWidth: '170px', height: 'auto', maxHeight: '200px' }}
+      />
     </div>
 
+    {/* Right Side - Small Image */}
+    <div className="p-4">
+      <img
+        src={img2}
+        alt="Small Image"
+        className="shadow-lg"
+        style={{ width: '100%', maxWidth: '90px', height: 'auto', maxHeight: '100px' }}
+      />
+    </div>
+  </div>
+</div>
+
           {/* Second Section */}
-          <div className="flex flex-col lg:flex-row items-center justify-between bg-white space-y-8 lg:space-y-0 lg:space-x-12 px-16">
+          <div className="flex flex-col lg:flex-row items-center justify-between bg-white space-y-8 lg:space-y-0 lg:space-x-12 lg:px-16 md:px-12 ">
                 {/* Left Side - Two Images */}
                 <div className="flex flex-col space-y-4">
                     <div>

@@ -36,9 +36,12 @@ const PricingTable = () => {
     }
   ];
 
+
   return (
-    <div className="mt-8 bg-[#F3ECEC] flex justify-center items-center p-6">
+    <div
+      className="mt-8 bg-[#F3ECEC] flex justify-center items-center p-6">
       <div className="max-w-4xl w-full   p-8">
+        <h1 className="font-semibold mb-4">PRICING TABLE</h1>
         <h1 className="text-4xl font-bold mb-8">BE KIND TO YOUR MIND</h1>
 
         <div className="flex flex-col lg:flex-row justify-between items-start space-y-8 lg:space-y-0 lg:space-x-8">
