@@ -24,18 +24,18 @@ const Footer = () => {
 
                 {/* Let's Talk Section */}
                 <div className="w-full flex items-center  md:justify-start">
-                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">LET'S TALK</h1>
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold pb-4">LET'S TALK</h1>
                 </div>
             </div>
             
             {/* Bottom Section */}
-            <footer className="bg-black text-white py-4">
+            <footer className="bg-black text-white py-8 ">
                 <div className=" mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-12">
-                    <div className="text-center md:text-left">
+                    <div className="text-center md:text-left sm:text-left">
                         <p>© 2022 - 2025 | All rights reserved</p>
-                        <p className="text-gray-500">by Wealcoder</p>
+                        <p className="">by Wealcoder</p>
                     </div>
-                    <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 mt-4 md:mt-0">
+                    <div className="flex flex-col md:flex-row lg:flex-row space-y-2 md:space-y-0 md:space-x-8 mt-4 md:mt-0">
                         <a href="#" className="hover:text-gray-500">ABOUT US</a>
                         <a href="#" className="hover:text-gray-500">CONTACT</a>
                         <a href="#" className="hover:text-gray-500">CAREER</a>

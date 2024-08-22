@@ -10,6 +10,8 @@ import Blog from './components/Blog';
 import Footer from './components/Footer';
 import HorizontalScrollSlider from './components/HorizontalScrollSlider';
 import ScrollToTopButton from './components/ScrollToTopButton ';
+import CustomCursor from './components/CustomCursor';
+
 
 
 
@@ -30,7 +32,7 @@ function App() {
       <Blog/>
       <ScrollToTopButton/>
       <Footer/>
-      
+      <CustomCursor />
 
 
 

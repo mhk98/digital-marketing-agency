@@ -54,9 +54,9 @@ function Agency() {
           <div className="flex bg-black">
             <a 
               href="#"
-              className="relative flex items-center justify-center h-20 w-20 md:h-24 md:w-24 lg:h-28 lg:w-40 lg:h-40 rounded-full bg-gray-900 border border-gray-700 hover:bg-white hover:text-black transition-all duration-300"
+              className="relative flex items-center justify-center h-20 w-20 md:h-24 md:w-24 lg:h-28 lg:w-40 lg:h-40 rounded-full bg-black border border-gray-700 hover:bg-white hover:text-black transition-all duration-300"
             >
-              <span className="text-gray-400 hover:text-white text-sm md:text-base lg:text-lg hover:text-black">
+              <span className="text-white text-sm md:text-base lg:text-lg hover:text-black font-semibold">
                 Explore Us
               </span>
               <MdArrowOutward size={20} className='absolute right-3 text-white hover:text-black' />

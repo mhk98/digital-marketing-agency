@@ -39,12 +39,12 @@ const PricingTable = () => {
 
   return (
     <div
-      className="mt-8 bg-[#F3ECEC] flex justify-center items-center p-6">
-      <div className="max-w-4xl w-full   p-8">
+      className="mt-8 bg-[#F3ECEC] flex justify-center items-center p-6 lg:px-16">
+      <div className=" w-full   p-8">
         <h1 className="font-semibold mb-4">PRICING TABLE</h1>
         <h1 className="text-4xl font-bold mb-8">BE KIND TO YOUR MIND</h1>
 
-        <div className="flex flex-col lg:flex-row justify-between items-start space-y-8 lg:space-y-0 lg:space-x-8">
+        <div className="flex flex-col lg:flex-row justify-between items-start space-y-8 lg:space-y-0 lg:space-x-96 ">
           <div className="space-y-4 flex-grow">
             {sections.map((section, index) => (
               <div key={index} className="border-b py-4">
@@ -110,7 +110,7 @@ const PricingTable = () => {
 
           <a
           href="#"
-          className="relative text-sm flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
+          className="relative text-sm flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:bg-black hover:text-white hover:border-black transition-all duration-300"
         >
            <p>Try It Free</p>
           <MdArrowOutward size={18} className="absolute right-8 text-black" />

@@ -116,10 +116,10 @@ const Service = () => {
       <div className="lg:w-1/3 w-full flex  lg:justify-end mt-8 lg:mt-0">
         <a
           href="#"
-          className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
+          className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-white hover:bg-black hover:border-black transition-all duration-300"
         >
           Details
-          <MdArrowOutward size={18} className="absolute right-8 text-black" />
+          <MdArrowOutward size={18} className="absolute right-8 text-black hover:text-white" />
         </a>
       </div>
 
@@ -183,12 +183,12 @@ const Service = () => {
 
       {/* Right Section: Circular Details Button */}
       <div className="lg:w-1/3 w-full flex  lg:justify-end mt-8 lg:mt-0">
-        <a
+      <a
           href="#"
-          className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
+          className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-white hover:bg-black hover:border-black transition-all duration-300"
         >
           Details
-          <MdArrowOutward size={18} className="absolute right-8 text-black" />
+          <MdArrowOutward size={18} className="absolute right-8 text-black hover:text-white" />
         </a>
       </div>
 
@@ -255,12 +255,12 @@ const Service = () => {
 
       {/* Right Section: Circular Details Button */}
       <div className="lg:w-1/3 w-full flex  lg:justify-end mt-8 lg:mt-0">
-        <a
+      <a
           href="#"
-          className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
+          className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-white hover:bg-black hover:border-black transition-all duration-300"
         >
           Details
-          <MdArrowOutward size={18} className="absolute right-8 text-black" />
+          <MdArrowOutward size={18} className="absolute right-8 text-black hover:text-white" />
         </a>
       </div>
 
@@ -325,12 +325,12 @@ const Service = () => {
 
       {/* Right Section: Circular Details Button */}
       <div className="lg:w-1/3 w-full flex  lg:justify-end mt-8 lg:mt-0">
-        <a
+      <a
           href="#"
-          className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-black hover:border-black transition-all duration-300"
+          className="relative flex items-center justify-center w-40 h-40 font-semibold rounded-full border border-gray-400 text-gray-600 hover:text-white hover:bg-black hover:border-black transition-all duration-300"
         >
           Details
-          <MdArrowOutward size={18} className="absolute right-8 text-black" />
+          <MdArrowOutward size={18} className="absolute right-8 text-black hover:text-white" />
         </a>
       </div>
 
